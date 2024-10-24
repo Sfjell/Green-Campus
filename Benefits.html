@@ -6,29 +6,61 @@
     <title>Benefits - Solar Panel Integration</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f7f9f7; /* Neutral background color */
+            color: #2c3e50; /* Darker text color for contrast */
+        }
+        .navbar {
+            background-color: #4caf50;
+        }
+        .navbar-brand, .nav-link {
+            color: white !important;
+        }
+        .navbar-nav .nav-link.active {
+            background-color: #388e3c;
+            border-radius: 5px;
+        }
+        .benefits-section {
+            background-color: #b2e0b2; /* Light green for Benefits section */
+            padding: 40px 20px; /* Add padding for better spacing */
+        }
+        .card {
+            border: none;
+            border-radius: 10px; /* Rounded corners for cards */
+            background-color: #e8f5e9; /* Light green for cards */
+        }
+        .card-title {
+            color: #388e3c; /* Dark green for card titles */
+        }
+        .card-text {
+            color: #555; /* Slightly lighter text for card descriptions */
+        }
+        footer {
+            background-color: #6db65d; /* Green footer */
+            color: white; /* White text for footer */
+        }
+    </style>
 </head>
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Campus Solar</a>
+            <a class="navbar-brand" href="#">Green Campus</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link active" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
+                        <a class="nav-link" href="About.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="Benefits.html">Benefits</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Instalation.html">Installation</a>
+                        <a class="nav-link" href="Benefits.html">Benefits and Installation</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="Contact.html">Contact</a>
@@ -39,70 +71,133 @@
     </nav>
 
     <!-- Benefits Section -->
-    <div class="container my-5">
-        <h1 class="text-center">Benefits of Solar Energy</h1>
-        <p class="text-center">Harnessing solar power brings numerous advantages to our campus and the environment. Here's how solar energy integration benefits our sustainability goals:</p>
-        
-        <!-- Benefits List -->
-        <div class="row text-center my-5">
-            <!-- Benefit 1 -->
-            <div class="col-md-4">
-                <div class="card shadow">
-                    <div class="card-body">
-                        <i class="bi bi-sun-fill display-4 text-warning"></i>
-                        <h5 class="card-title mt-3">Clean, Renewable Energy</h5>
-                        <p class="card-text">Solar energy is a clean, renewable source that helps reduce carbon emissions and combat climate change.</p>
+    <div class="container-fluid benefits-section">
+        <div class="container">
+            <h1 class="text-center">Benefits of Solar Energy</h1>
+            <p class="text-center">Harnessing solar power brings numerous advantages to our campus and the environment. Here's how solar energy integration benefits our sustainability goals:</p>
+            
+            <!-- Benefits List -->
+            <div class="row text-center my-5">
+                <!-- Benefit 1 -->
+                <div class="col-md-4">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <i class="bi bi-sun-fill display-4 text-warning"></i>
+                            <h5 class="card-title mt-3">Clean, Renewable Energy</h5>
+                            <p class="card-text">Solar energy is a clean, renewable source that helps reduce carbon emissions and combat climate change.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Benefit 2 -->
+                <div class="col-md-4">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <i class="bi bi-piggy-bank-fill display-4 text-success"></i>
+                            <h5 class="card-title mt-3">Cost Savings</h5>
+                            <p class="card-text">By generating our own energy, we can reduce electricity costs and save money in the long term.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Benefit 3 -->
+                <div class="col-md-4">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <i class="bi bi-people-fill display-4 text-primary"></i>
+                            <h5 class="card-title mt-3">Educational Opportunities</h5>
+                            <p class="card-text">Solar panel data offers educational opportunities for students and faculty to research renewable energy systems.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- Benefit 2 -->
-            <div class="col-md-4">
-                <div class="card shadow">
-                    <div class="card-body">
-                        <i class="bi bi-piggy-bank-fill display-4 text-success"></i>
-                        <h5 class="card-title mt-3">Cost Savings</h5>
-                        <p class="card-text">By generating our own energy, we can reduce electricity costs and save money in the long term.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Benefit 3 -->
-            <div class="col-md-4">
-                <div class="card shadow">
-                    <div class="card-body">
-                        <i class="bi bi-people-fill display-4 text-primary"></i>
-                        <h5 class="card-title mt-3">Educational Opportunities</h5>
-                        <p class="card-text">Solar panel data offers educational opportunities for students and faculty to research renewable energy systems.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <div class="row text-center my-5">
-            <!-- Benefit 4 -->
-            <div class="col-md-6">
-                <div class="card shadow">
-                    <div class="card-body">
-                        <i class="bi bi-shield-fill-check display-4 text-danger"></i>
-                        <h5 class="card-title mt-3">Energy Independence</h5>
-                        <p class="card-text">Producing our own energy means we rely less on external power sources, ensuring energy security for the campus.</p>
+            <div class="row text-center my-5">
+                <!-- Benefit 4 -->
+                <div class="col-md-6">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <i class="bi bi-shield-fill-check display-4 text-danger"></i>
+                            <h5 class="card-title mt-3">Energy Independence</h5>
+                            <p class="card-text">Producing our own energy means we rely less on external power sources, ensuring energy security for the campus.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- Benefit 5 -->
-            <div class="col-md-6">
-                <div class="card shadow">
-                    <div class="card-body">
-                        <i class="bi bi-tree-fill display-4 text-success"></i>
-                        <h5 class="card-title mt-3">Sustainability Leadership</h5>
-                        <p class="card-text">By adopting solar energy, our campus leads by example, showing a commitment to sustainability and a greener future.</p>
+                <!-- Benefit 5 -->
+                <div class="col-md-6">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <i class="bi bi-tree-fill display-4 text-success"></i>
+                            <h5 class="card-title mt-3">Sustainability Leadership</h5>
+                            <p class="card-text">By adopting solar energy, our campus leads by example, showing a commitment to sustainability and a greener future.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+ <!-- Installation Process Section -->
+ <div class="container my-5">
+    <h1 class="text-center mb-4">Solar Panel Installation Process</h1>
+    <p class="text-center mb-5">Our team follows a structured, safe, and efficient process to integrate solar energy into the campus infrastructure. Below are the key stages of our installation process.</p>
+    
+    <!-- Installation Steps -->
+    <div class="row text-center mb-5">
+        <!-- Step 1 -->
+        <div class="col-md-4 mb-4">
+            <div class="card shadow">
+                <div class="card-body">
+                    <i class="bi bi-lightbulb-fill display-4"></i>
+                    <h5 class="card-title mt-3">Site Assessment</h5>
+                    <p class="card-text">We begin by assessing the campus to determine optimal solar panel placement, considering sunlight exposure and roof capacity.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Step 2 -->
+        <div class="col-md-4 mb-4">
+            <div class="card shadow">
+                <div class="card-body">
+                    <i class="bi bi-gear-fill display-4"></i>
+                    <h5 class="card-title mt-3">System Design</h5>
+                    <p class="card-text">Our engineers design a custom solar power system tailored to the campus's energy needs and architectural structure.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Step 3 -->
+        <div class="col-md-4 mb-4">
+            <div class="card shadow">
+                <div class="card-body">
+                    <i class="bi bi-file-earmark-check-fill display-4"></i>
+                    <h5 class="card-title mt-3">Permitting</h5>
+                    <p class="card-text">We handle the necessary permits and approvals to ensure that the installation complies with local regulations and standards.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <div class="row text-center mb-5">
+        <!-- Step 4 -->
+        <div class="col-md-6 mb-4">
+            <div class="card shadow">
+                <div class="card-body">
+                    <i class="bi bi-hammer display-4"></i>
+                    <h5 class="card-title mt-3">Installation</h5>
+                    <p class="card-text">Our experienced installers securely place the solar panels and electrical systems with minimal disruption to campus operations.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Step 5 -->
+        <div class="col-md-6 mb-4">
+            <div class="card shadow">
+                <div class="card-body">
+                    <i class="bi bi-bar-chart-line-fill display-4"></i>
+                    <h5 class="card-title mt-3">System Monitoring</h5>
+                    <p class="card-text">After installation, we set up monitoring systems to track energy production and ensure optimal performance of the solar panels.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
     <!-- Footer -->
-    <footer class="bg-light py-4">
+    <footer class="py-4">
         <div class="container text-center">
             <p>© 2024 Campus Solar Initiative | Powered by Clean Energy</p>
         </div>

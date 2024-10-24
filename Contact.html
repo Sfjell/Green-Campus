@@ -6,32 +6,81 @@
     <title>Contact Us - Solar Panel Integration</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f9f4;
+            color: #333;
+        }
+        .navbar {
+            background-color: #4caf50;
+        }
+        .navbar-brand, .nav-link {
+            color: white !important;
+        }
+        .navbar-nav .nav-link.active {
+            background-color: #388e3c;
+            border-radius: 5px;
+        }
+        .btn-primary {
+            background-color: #28a745;
+            border-color: #28a745;
+        }
+        .btn-primary:hover {
+            background-color: #218838;
+            border-color: #218838;
+        }
+        h1, h5 {
+            color: #28a745;
+        }
+        .card {
+            background-color: #e9f7ef;
+            border: 1px solid #c8e6c9;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .card p {
+            margin-bottom: 1rem;
+        }
+        footer {
+            background-color: #28a745;
+            color: white;
+        }
+        a {
+            color: #28a745;
+        }
+        a:hover {
+            color: #218838;
+        }
+        .contact-info h5 {
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+    </style>
 </head>
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Campus Solar</a>
+            <a class="navbar-brand" href="#">Green Campus</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link active" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
+                        <a class="nav-link" href="About.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Benefits.html">Benefits</a>
+                        <a class="nav-link" href="Benefits.html">Benefits and Installation</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Instalation.html">Installation</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="Contact.html">Contact</a>
+                        <a class="nav-link" href="Contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -47,43 +96,44 @@
         <div class="row">
             <!-- Contact Form -->
             <div class="col-md-6">
-                <form>
-                    <div class="mb-3">
-                        <label for="name" class="form-label">Your Name</label>
-                        <input type="text" class="form-control" id="name" placeholder="Enter your name">
-                    </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Your Email</label>
-                        <input type="email" class="form-control" id="email" placeholder="Enter your email">
-                    </div>
-                    <div class="mb-3">
-                        <label for="subject" class="form-label">Subject</label>
-                        <input type="text" class="form-control" id="subject" placeholder="Subject of your inquiry">
-                    </div>
-                    <div class="mb-3">
-                        <label for="message" class="form-label">Message</label>
-                        <textarea class="form-control" id="message" rows="5" placeholder="Write your message"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
+                <div class="card p-4 shadow-sm">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Your Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" class="form-control" id="subject" placeholder="Subject of your inquiry" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="5" placeholder="Write your message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
             </div>
 
             <!-- Contact Information -->
-            <div class="col-md-6">
-                <h5>Our Office</h5>
-                <p><strong>Campus Solar Initiative</strong></p>
-                <p>123 Green Energy Street,<br>Edinburgh, EH1 2AB<br>Scotland</p>
-
-                <h5>Email</h5>
-                <p><a href="mailto:info@campussolar.com">info@campussolar.com</a></p>
-
-                <h5>Phone</h5>
-                <p><a href="tel:+441312345678">+44 131 234 5678</a></p>
-
-                <h5>Social Media</h5>
-                <a href="#" class="text-decoration-none me-3"><i class="bi bi-facebook"></i> Facebook</a>
-                <a href="#" class="text-decoration-none me-3"><i class="bi bi-twitter"></i> Twitter</a>
-                <a href="#" class="text-decoration-none"><i class="bi bi-linkedin"></i> LinkedIn</a>
+            <div class="col-md-6 contact-info">
+                <div class="card p-4 shadow-sm">
+                    <h5>Our Office</h5>
+                    <p><strong>Campus Solar Initiative</strong></p>
+                    <p>123 Green Energy Street,<br>Edinburgh, EH1 2AB<br>Scotland</p>
+                    <h5>Email</h5>
+                    <p><a href="mailto:info@campussolar.com">info@campussolar.com</a></p>
+                    <h5>Phone</h5>
+                    <p><a href="tel:+441312345678">+44 131 234 5678</a></p>
+                    <h5>Social Media</h5>
+                    <a href="#" class="text-decoration-none me-3"><i class="bi bi-facebook"></i> Facebook</a>
+                    <a href="#" class="text-decoration-none me-3"><i class="bi bi-twitter"></i> Twitter</a>
+                    <a href="#" class="text-decoration-none"><i class="bi bi-linkedin"></i> LinkedIn</a>
+                </div>
             </div>
         </div>
 
@@ -91,13 +141,13 @@
         <div class="mt-5">
             <h5 class="text-center">Find Us Here</h5>
             <div class="d-flex justify-content-center">
-                <img src="https://via.placeholder.com/800x400" class="img-fluid rounded" alt="Map Location">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4472.634633869233!2d-3.3281814029314756!3d55.90919812823553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4887c46af06eff31%3A0xea463bd59d93b226!2sHeriot-Watt%20University!5e0!3m2!1sno!2suk!4v1729766214859!5m2!1sno!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </div>
 
     <!-- Footer -->
-    <footer class="bg-light py-4">
+    <footer class="py-4">
         <div class="container text-center">
             <p>© 2024 Campus Solar Initiative | Powered by Clean Energy</p>
         </div>
